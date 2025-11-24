@@ -1,0 +1,185 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Đã thêm font mới */
+    background: #e9f0f9;
+    /* Thay màu nền nhạt hơn để gần với mẫu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.login-box {
+    background: #fff;
+    padding: 40px;
+    /* Tăng padding để rộng rãi hơn */
+    border-radius: 12px;
+    /* Bo góc mềm mại hơn */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Shadow rõ hơn */
+    width: 380px;
+    /* Điều chỉnh chiều rộng */
+    text-align: center;
+    /* Căn giữa nội dung trong box */
+}
+
+
+/* Tiêu đề */
+
+.main-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+
+/* Logo Container */
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* Khoảng cách giữa các logo */
+    margin-bottom: 10px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    /* Nếu logo có nền trắng thì không cần border */
+}
+
+
+/* Label */
+
+.input-label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Input Fields (Thay đổi để giống giao diện) */
+
+.custom-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    /* Viền nhạt */
+    border-radius: 8px;
+    /* Bo góc input */
+    box-sizing: border-box;
+    background-color: #f7f9fc;
+    /* Nền input màu nhạt */
+    font-size: 16px;
+}
+
+.custom-input:focus {
+    border-color: #4c8bf5;
+    /* Viền màu xanh khi focus */
+    outline: none;
+}
+
+
+/* Hàng tùy chọn (Lưu thông tin & Quên mật khẩu) */
+
+.options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    color: #666;
+    cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+    margin-bottom: 0;
+    /* Loại bỏ margin-bottom mặc định */
+}
+
+.forgot-password {
+    color: #4c8bf5;
+    /* Màu xanh dương cho link */
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* Nút Đăng nhập */
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background: #4c8bf5;
+    /* Màu xanh dương đậm hơn, nổi bật */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.login-button:hover {
+    background: #3b74d7;
+    /* Màu hover sẫm hơn */
+}
+
+
+/* Thông báo lỗi */
+
+.error {
+    color: #d32f2f;
+    background: #ffebee;
+    border: 1px solid #ef9a9a;
+    padding: 10px;
+    border-radius: 8px;
+    /* Bo góc lỗi */
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+
+/* Link Tạo tài khoản */
+
+.register-link-container {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+    /* Đường kẻ phân cách */
+    font-size: 15px;
+    color: #666;
+}
+
+.register-link {
+    color: #4c8bf5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}

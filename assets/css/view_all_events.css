@@ -1,0 +1,31 @@
+.event-list-container {
+    max-height: 400px;
+    /* Chiều cao tối đa */
+    overflow-y: auto;
+    /* Hiện thanh cuộn nếu danh sách dài */
+    padding-right: 10px;
+}
+
+.event-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #fafafa;
+    transition: 0.2s;
+}
+
+.event-item:hover {
+    background-color: #f0f8ff;
+    border-color: #007bff;
+}
+
+.event-item h4 {
+    margin-top: 0;
+    color: #004a99;
+}
+
+.event-item ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Dùng min-height để form không bị cắt */
+    margin: 0;
+    padding: 20px 0;
+    /* Thêm padding nếu nội dung dài */
+}
+
+.register-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.register-box h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+.register-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-box button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    /* Màu xanh lá cho nút đăng ký */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-box button:hover {
+    background: #218838;
+}
+
+.error {
+    color: red;
+    background: #ffebee;
+    border: 1px solid #ef9a9a;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}

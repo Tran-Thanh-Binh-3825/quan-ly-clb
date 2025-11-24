@@ -1,0 +1,266 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+.navbar {
+    background: #004a99;
+    /* Màu xanh đậm */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+    background: #003366;
+    /* Màu xanh đậm hơn khi hover */
+}
+
+.navbar-user {
+    color: #eee;
+    font-size: 0.9em;
+}
+
+.navbar-user strong {
+    color: #fff;
+}
+
+.navbar-user a {
+    color: #ffc107;
+    /* Màu vàng cho link đăng xuất */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-height: 500px;
+}
+
+.container-banner {
+    width: 100%;
+    /* 100% chiều rộng của container */
+    height: 500px;
+    /* Chiều cao cố định (bạn có thể đổi) */
+    object-fit: cover;
+    /* Đảm bảo ảnh lấp đầy, không bị méo */
+    border-radius: 8px;
+    /* Bo góc cho đẹp */
+    margin-bottom: 20px;
+    /* Khoảng cách với nội dung bên dưới */
+}
+
+.content-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #fdfdfd;
+}
+
+h3 {
+    border-bottom: 2px solid #004a99;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+
+/* Style cho bảng */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+
+/* Style cho form */
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    background: #ffebee;
+    border: 1px solid #ef9a9a;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.success {
+    color: green;
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+/* CSS CHO THÔNG BÁO (BƯỚC 2.2) */
+
+.announcement-item {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.announcement-item h4 {
+    color: #d81b60;
+    /* Màu hồng cho thông báo */
+    margin-bottom: 5px;
+}
+
+.announcement-meta {
+    font-size: 0.85em;
+    color: #777;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.announcement-content {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+
+/* === BẮT ĐẦU CSS MỚI CHO CARD CLB === */
+
+.club-grid {
+    display: grid;
+    /* SỬA DÒNG NÀY: Bỏ 1fr, chỉ dùng 280px */
+    grid-template-columns: repeat(auto-fill, 20%);
+    gap: 25px;
+    padding: 10px 0;
+    /* THÊM DÒNG NÀY: Tự động căn giữa các thẻ */
+    justify-content: center;
+}
+
+.club-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    /* Giúp thẻ không bị vỡ layout */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* Cắt ảnh bị thừa */
+}
+
+
+/* Phần ảnh (logo) */
+
+.club-card-image {
+    height: 160px;
+    background-color: #f4f4f4;
+    /* Màu nền nếu không có ảnh */
+}
+
+.club-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Đảm bảo ảnh lấp đầy, không bị méo */
+}
+
+
+/* Phần nội dung (tên, mô tả) */
+
+.club-card-content {
+    padding: 15px 20px;
+    flex-grow: 1;
+    /* Giúp phần content lấp đầy */
+}
+
+.club-card-title {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.club-card-desc {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+    /* Cắt ngắn mô tả nếu quá 3 dòng */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 65px;
+    /* (1.5em * 3 dòng) + ~ */
+}
+
+
+/* Phần nút (action) */
+
+.club-card-action {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.club-card-action button {
+    width: 100%;
+    /* Nút sẽ lấp đầy */
+}

@@ -1,0 +1,175 @@
+/* footer */
+
+
+/* Reset CSS cơ bản */
+
+.vlu-footer * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vlu-footer {
+    background-color: #000033;
+    /* Màu xanh đen chủ đạo */
+    color: #ffffff;
+    padding: 30px 0 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* --- PHẦN 1: HEADER CỦA FOOTER --- */
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    height: 60px;
+    /* Điều chỉnh kích thước logo */
+    object-fit: contain;
+    /* Dùng filter để đổi màu logo sang trắng nếu cần, 
+       nhưng logo VLU gốc có màu đỏ nên cứ để nguyên */
+}
+
+.contact-group {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item .label {
+    font-size: 13px;
+    color: #a0a0c0;
+    /* Màu xám xanh nhạt */
+    margin-bottom: 5px;
+}
+
+.contact-item .value {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* Đường kẻ ngang */
+
+.footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+}
+
+
+/* --- PHẦN 2: CÁC CỘT LIÊN KẾT --- */
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Chia làm 4 cột bằng nhau */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.footer-col h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #a0a0c0;
+    /* Màu chữ xám nhạt */
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #d32f2f;
+    /* Màu đỏ khi di chuột vào (giống màu logo VLU) */
+}
+
+
+/* Icon mạng xã hội */
+
+.social-links i {
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+/* --- PHẦN 3: COPYRIGHT --- */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    color: #888;
+    font-size: 13px;
+}
+
+.footer-bottom .legal-links a {
+    text-decoration: none;
+    color: #888;
+    margin-left: 20px;
+}
+
+.footer-bottom .legal-links a:hover {
+    color: white;
+}
+
+
+/* --- RESPONSIVE CHO MOBILE --- */
+
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-group {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        /* Mobile hiển thị 2 cột */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-links {
+        grid-template-columns: 1fr;
+        /* Màn hình nhỏ quá thì 1 cột */
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
