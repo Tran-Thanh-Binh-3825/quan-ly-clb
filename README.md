@@ -30,7 +30,7 @@
 
 ## 📖 1. Giới thiệu
 
-Hệ thống **Quản lý Hồ sơ Sinh viên và Điểm số** được xây dựng nhằm hỗ trợ công tác quản lý, theo dõi và đánh giá thông tin của sinh viên trong môi trường giáo dục đại học. Thay vì quản lý thủ công bằng giấy tờ hay các tệp Excel rời rạc, hệ thống mang đến một giải pháp tập trung, hiện đại và dễ sử dụng.
+Hệ thống quản lý clb sinh viên kết nối ba đối tượng: Quản trị viên (Admin), Chủ nhiệm (Leader) và Sinh viên (Student) trên một nền tảng duy nhất. Qua đó, giúp nhà trường dễ dàng giám sát, Ban chủ nhiệm tổ chức sự kiện hiệu quả, và Sinh viên thuận tiện trong việc tìm kiếm, đăng ký tham gia các sân chơi bổ ích.
 
 ## 🛠️ 2. Các công nghệ được sử dụng
 <div align="center">
